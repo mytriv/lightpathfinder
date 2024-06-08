@@ -13,11 +13,11 @@
     <body style="background-color: black">
         <script type="text/javascript" src="js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-        <div id="debug">
-            <script>
-                // Initialize Eruda
-                eruda.init();
-            </script>
-        </div>
+        <script>
+            const elem = document.getElementById("debug");
+            // Initialize Eruda
+            eruda.init({container: elem,});
+        </script>
+        <div id="debug"></div>
     </body>
 </html>
