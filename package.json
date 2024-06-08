@@ -4,8 +4,8 @@
     "chromium-args": "--force-color-profile=srgb --disable-devtools",
     "window": {
         "title": "LightPathfinder",
-        "width": 720,
-        "height": 1280,
+        "width": 561,
+        "height": 864,
         "position": "center",
         "icon": "icon/icon.png"
     }
