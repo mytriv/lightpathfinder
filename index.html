@@ -15,7 +15,19 @@
         <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
         <script src="https://telegram.org/js/games.js"></script>
         <script>
-            console.log(window.TelegramGameProxy)
+            try {
+                // Attempt to access the receiveEvent method
+                if (window.TelegramGameProxy && window.TelegramGameProxy.receiveEvent) {
+                    window.TelegramGameProxy.receiveEvent();
+                } else {
+                    console.error("TelegramGameProxy or receiveEvent is not defined");
+                }
+            } catch (error) {
+                // Handle the error
+                console.error("An error occurred:", error.message);
+            }
+            console.log(window.TelegramGameProxy);
         </script>
+
     </body>
 </html>
